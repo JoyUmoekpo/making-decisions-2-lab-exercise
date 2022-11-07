@@ -11,7 +11,7 @@ var arr = [10, 20, 30, 40, 50, 60]
 let firstItem = arr[0];
 console.log(firstItem);
 
-console.log("----------------------------")
+console.log("----------------------------");
 
 ////////// PROBLEM 2 //////////
 /*
@@ -22,7 +22,7 @@ let lastItemRemoved = arr.pop();
 console.log(lastItemRemoved);
 console.log(arr);
 
-console.log("----------------------------")
+console.log("----------------------------");
 
 //Code Here
 
@@ -42,7 +42,7 @@ for (let i = 0; i <= 4; i++) {
   console.log(family[i]);
 }
 
-console.log("----------------------------")
+console.log("----------------------------");
 
 ////////// PROBLEM 4 //////////
 
@@ -65,7 +65,7 @@ for (let i = 0; i < nums.length; i++) {
 }
 console.log(evensArr);
 
-console.log("----------------------------")
+console.log("----------------------------");
 
 ////////// PROBLEM 5 //////////
 
@@ -91,7 +91,7 @@ if (score >= 90) {
   console.log('F');
 }
 
-console.log("----------------------------")
+console.log("----------------------------");
 
 
 ////////// Intermediate Problems //////////
@@ -111,7 +111,7 @@ var myFavoriteNumbers = [4, 8, 12, 16, 20, 24];
 let someNum = myFavoriteNumbers[4];
 console.log(someNum);
 
-console.log("----------------------------")
+console.log("----------------------------");
 
 ////////// PROBLEM 7 //////////
 
@@ -134,7 +134,7 @@ if (myFavoriteNumbers.length < 7) {
   console.log(someNum);
 }
 
-console.log("----------------------------")
+console.log("----------------------------");
 
 ////////// PROBLEM 8 //////////
 
@@ -152,7 +152,7 @@ for (i = 0; i < listOfNumbers.length; i++) {
   }
 }
 
-console.log("----------------------------")
+console.log("----------------------------");
 
 ////////// PROBLEM 9 //////////
 // Do not edit the code below.
@@ -169,7 +169,7 @@ for (let i = letters.length - 1; i >= 0; i--) {
   console.log(letters[i])
 }
 
-console.log("----------------------------")
+console.log("----------------------------");
 
 ////////// Advanced Problems //////////
 
@@ -209,6 +209,8 @@ switch (letterGrade) {
     console.log("Not an eligible grade.");
 }
 
+console.log("----------------------------");
+
 ////////// PROBLEM 11 //////////
 /* The famous FizzBuzz, Devmountain style!
   Create a for loop that iterates from 1 to 100. In this for loop, using some conditional logic, if the number your for loop is currently on is divisible by 3, console.log 'Dev'. If the number is divisible by 5, console.log 'mountain'. If the number is divisible by 5 & 3, console.log 'Devmountain'. If the number is not divisible by 5 or 3, console.log the number itself. Hint: Look up the modulo operator.
@@ -234,3 +236,15 @@ switch (letterGrade) {
 */
 
 //Code Here
+
+for (let i = 1; i <= 100; i++) {
+  if  (i % 5 == 0 && i % 3 == 0) {
+    console.log("Devmountain");
+  } else if (i % 3 == 0) {
+    console.log("Dev");
+  } else if (i % 5 == 0) {
+    console.log("mountain");
+  } else if (i % 5 !== 0 && i % 3 !== 0) {
+    console.log(i);
+  }
+}
